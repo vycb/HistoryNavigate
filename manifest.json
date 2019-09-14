@@ -2,7 +2,7 @@
 
 	"manifest_version": 2,
 	"name": "History Navigate",
-	"version": "1.0",
+	"version": "1.0.1",
 
 	"description": "The addon to navigate by history from context menu",
 	"homepage_url": "https://github.com/vycb/HistoryNavigate",

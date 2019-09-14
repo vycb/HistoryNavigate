@@ -1,2 +1,2 @@
 ﻿# History Navigate   
-### The addon to navigate by history from context menu  
+### This add-on allow navigate a tab by selecting url from history in context menu   
