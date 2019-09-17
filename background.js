@@ -9,7 +9,13 @@ function setUpMenu(){
 		let i=0
 		for (let item of historyItems) {
 			let url = new URL(item.url),
-				itemTitle = item.title? item.title: item.url
+				itemTitle = item.title? item.title: item.url;
+
+			if(itemTitle.length >71 ){
+				let beg = itemTitle.slice(0, 32)
+				let end = itemTitle.slice(-35)
+				itemTitle = beg+'...'+end
+			}
 	
 			chrome.contextMenus.create({ id: "historynavigate-" + i++, title: itemTitle, contexts: ["all"], enabled: true, onclick: ()=>{
 				let querying = browser.tabs.query({currentWindow: true, active: true})
